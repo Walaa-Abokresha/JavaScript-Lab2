@@ -1,0 +1,96 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Registration Form</title>
+            <meta name="description" content="CMS ITI Road map syllabus"/>
+            <link rel="stylesheet" type="text/css" href="JS.css" />
+        </head> 
+        <body>
+            <table class="center">
+                
+                <thead style="align-items: center;
+                ;">
+                    <tr>
+                        <td style="color:rgb(81, 158, 104);
+                        font-weight: bolder;
+                        font-size: larger;"> Register-Create Account</td>
+                       
+                    </tr>
+                    <tr>
+                        <td style="background-color:rgba(150, 218, 150, 0.658)">Field Marked with * are compulsory fields </td>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <form id ="form" action=" " method="post">
+                    <tr>
+                        <td>
+                            <label >
+                                <span style="color:red;">*</span>Username
+                            </label>
+                        </td>
+                        <td>
+                            <input size="20" type="text" name="name"  id="name" required/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label>
+                                <span style="color:red;">*</span>Password
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="align-items:center">
+                            <input type="reset" name="reset" value="Cancel">
+                            <input type="submit" name="submit"  value="Login">
+                        </td>
+                    </tr>
+                </form>
+                </tbody>
+              </table>
+
+        <script>
+            // let userNameInput = document.querySelector(".username");
+            // let passwordInput = document.querySelector(".password");
+            // let form = document.getElementById("form");
+            // document.forms[0] .onsubmit = function(){
+            //     if (userNameInput.value === "admin" && passwordInput.value === "123") {
+            //         document.write("Welcome");
+                    
+            //     }
+            //     else {
+            //         document.write("not registered");}
+            //     }
+            // ;
+            
+            let form = document.getElementById("form");
+            let userNameInput = document.querySelector(".username");
+            let passwordInput = document.querySelector(".password");
+
+            form.Onclick = function(){
+                if (userNameInput.value === "admin" && passwordInput.value === 123) 
+                {
+                    alert("Welcome");
+                    
+                }
+                else {
+                    alert("not registered");}
+
+            };
+            var name = prompt("What's your name?");
+if(name.length > 0 && name != "null") {
+    document.write("Welcome");
+} else {
+    document.write("not registered!");
+}
+            
+        </script>
+        </body>
+    </html>
